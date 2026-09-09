@@ -1,0 +1,10 @@
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# 注意：matched.json 与 history.json 必须提交回仓库
+#   - matched.json = 工作台「GitHub 待机监控」看板的数据源（路线 C）
+#   - history.json = 跨次运行的去重状态
+# 二者都不能忽略，否则 Actions 提交时会静默失败、看板永远读不到数据。

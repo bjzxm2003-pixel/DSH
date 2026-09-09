@@ -1,0 +1,60 @@
+name: 招标监控定时任务
+
+# ============================================================
+# 路线 C：GitHub 待机运行 → 抓招标 + 推微信(Server酱) + 写 matched.json 回仓库
+# 工作台（手机端/网页端）fetch 仓库里的 matched.json 渲染「GitHub 待机监控」看板
+# 不依赖任何 WorkBuddy 令牌，电脑睡不睡都更新。
+# ============================================================
+
+on:
+  schedule:
+    # 每天北京时间 09:00 和 18:00 运行（UTC 时间 01:00 和 10:00）
+    - cron: '0 1,10 * * *'
+  # 允许手动触发，方便测试
+  workflow_dispatch:
+
+# 允许 Action 把结果提交回本仓库（公开 URL 永远最新）
+permissions:
+  contents: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安装依赖
+        run: |
+          pip install requests beautifulsoup4
+
+      - name: 运行监控脚本（抓招标 + 推微信 + 产出 matched.json）
+        env:
+          SCKEY: ${{ secrets.SCKEY }}
+        run: python tender_monitor.py
+
+      - name: 提交监控结果到仓库（matched.json + history.json）
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add matched.json history.json || true
+          if git diff --staged --quiet; then
+            echo "无变化，跳过提交"
+          else
+            git commit -m "更新招标监控结果 [skip ci]"
+            git push
+          fi
+
+      # ---- 可选 best-effort：若你后续拿到能写资料库的长效令牌，取消注释并在 Secrets 配置 WB_OP_TOKEN ----
+      # - name: 同步到工作台资料库（best-effort，无令牌则跳过）
+      #   env:
+      #     WB_OP_TOKEN: ${{ secrets.WB_OP_TOKEN }}
+      #     WB_APP_KEY: ${{ secrets.WB_APP_KEY }}
+      #     WB_APP_SECRET: ${{ secrets.WB_APP_SECRET }}
+      #   run: python workbuddy_sync.py
