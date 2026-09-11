@@ -95,3 +95,37 @@ https://api.github.com/repos/bjzxm2003-pixel/DSH/contents/matched.json
 
 `monitor.yml` 中 `cron: '0 1,10 * * *'` = **UTC 01:00 与 10:00** = **北京时间 09:00 与 18:00**。
 GitHub 定时任务在负载高时可能延迟若干分钟，属正常。如需更密，改 cron 即可（注意免费额度）。
+
+---
+
+## 八、内容线（康养/国学）· GitHub 自动成稿
+
+`content.yml` 每天北京时间 18:00 自动运行 `content_pipeline.py`：
+
+```
+DuckDuckGo 搜索今日爆款（无需搜索 API key）
+        ↓ 搜索失败自动降级
+用仓库 content.json 里已有选题池
+        ↓
+DeepSeek 成稿（每板块 3 篇今日头条图文，1000-1500 字）
+        ↓
+写回 content.json 并提交到本仓库
+        ↓
+工作台/手机端打开即自动拉取显示（☁️ GitHub 徽章）
+```
+
+### 你只需配置一次 Secrets（仓库 → Settings → Secrets and variables → Actions）
+
+| Secret | 必填 | 值 |
+|---|---|---|
+| `LLM_API_KEY` | ✅ | DeepSeek 的 API Key（platform.deepseek.com 创建） |
+| `LLM_BASE_URL` | 可选 | 默认 `https://api.deepseek.com` |
+| `LLM_MODEL` | 可选 | 默认 `deepseek-chat` |
+
+**未配置 `LLM_API_KEY` 时工作流照样运行但会自动跳过成稿（不算失败）。**
+
+### 工作台侧变化
+- 康养 / 国学两模块只保留「手动选题 + 草稿箱」；草稿箱默认折叠（显示最新 2 条），点「展开全部」分页浏览（每页 5 条）。
+- 草稿来源两种：☁️ GitHub（Actions 自动成稿）、本地/WorkBuddy（手动选题或专家生成），按 id 去重合并。
+- 在工作台删掉的 GitHub 草稿会被记录，之后同步不会"复活"。
+- 手动验证：Actions 页选「内容管线（选题+成稿）」→ Run workflow；跑完看仓库 `content.json` 的 `drafts.*` 是否新增。
