@@ -164,13 +164,85 @@ def draft_id(seq):
     return "g%s%02d" % (STAMP, seq)
 
 
+# ---------- 重复检测：避免天天写同一批爆款 ----------
+
+_PUNCT = re.compile(r"[\s\W_]+", re.UNICODE)
+
+def norm_title(t):
+    """标题归一化：去标点/空白/书名号，转小写"""
+    return _PUNCT.sub("", str(t or "")).lower()
+
+def bigrams(t):
+    return {t[i:i + 2] for i in range(len(t) - 1)} if len(t) > 1 else {t}
+
+def similar(a, b):
+    """判定两条标题是否同一选题：归一化后 完全相同 / 4字以上片段互相包含 /
+    bigram Jaccard>0.4 / 共享4字以上实义片段（如专名「永乐大典」）"""
+    na, nb = norm_title(a), norm_title(b)
+    if not na or not nb:
+        return False
+    if na == nb:
+        return True
+    if len(na) >= 4 and na in nb:
+        return True
+    if len(nb) >= 4 and nb in na:
+        return True
+    ba, bb = bigrams(na), bigrams(nb)
+    inter = ba & bb
+    if inter and len(inter) / len(ba | bb) > 0.4:
+        return True
+    if len(na) >= 8 and len(nb) >= 8:
+        common = _lcs(na, nb)
+        if len(common) >= 4 and _contentful(common):
+            return True
+    return False
+
+_STOP_CHARS = set("的了了吗呢吧啊呀是把是在和与就都也很又才更最不没为确保等等上下中里去来说而对于因其这那个有会能可以要想到对被让从向于由基么什怎么")
+
+def _contentful(s):
+    """片段里实义字（非虚词）至少 3 个，才算有区分度的共享片段"""
+    return sum(1 for ch in s if ch not in _STOP_CHARS) >= 3
+
+def _lcs(a, b):
+    """最长公共连续子串（标题级，串短，O(n²) 可接受）"""
+    best = ""
+    for i in range(len(a)):
+        for j in range(len(b)):
+            k = 0
+            while i + k < len(a) and j + k < len(b) and a[i + k] == b[j + k]:
+                k += 1
+            if k > len(best):
+                best = a[i:i + k]
+    return best
+
+def is_dup_title(title, used):
+    return any(similar(title, u) for u in used if u)
+
+def draft_titles(v, content):
+    """该板块已成稿的首行标题（去掉【】）"""
+    return [str(d.get("text", "")).split("\n")[0].strip("【】")
+            for d in content.get(v["drafts_col"], [])]
+
+def used_titles(v, content):
+    """已写过（草稿）+ 已选过（选题池）的全部标题，用于选题查重"""
+    return draft_titles(v, content) + [
+        t.get("title", "") for t in content.get(v["topics_col"], [])
+        if isinstance(t, dict) and t.get("title")
+    ]
+
+
 # ---------- 第一步：选题 ----------
 
 def scout_topics(v, content):
-    """搜索 + LLM 提炼 3 条选题。失败降级用已有选题池。来源标 github。"""
+    """搜索 + LLM 提炼选题（带历史查重）。失败降级用已有选题池。来源标 github。"""
     log("\n🔍 [%s] 开始选题侦察" % v["name"])
+    used = used_titles(v, content)
+    # 搜索词按日期轮换：不同天用不同组合，避免天天搜到同一批结果
+    qs = v["search_queries"]
+    day = int(TODAY.split("-")[2])
+    picked_queries = [qs[(day + i) % len(qs)] for i in range(3)]
     corpus = []
-    for q in v["search_queries"][:3]:  # 控制请求量，3 个查询足够
+    for q in picked_queries:
         hits = ddg_search(q, max_results=6)
         log("  搜索「%s」→ %d 条结果" % (q, len(hits)))
         for h in hits:
@@ -178,45 +250,54 @@ def scout_topics(v, content):
         time.sleep(1.5)  # 礼貌限速
 
     if corpus:
+        hist = "\n".join("- " + u for u in used[-25:]) or "（暂无）"
         prompt = (
             "以下是今天从搜索引擎抓到的关于「%s」赛道的网页标题和摘要（抓取时间 %s）：\n\n%s\n\n"
-            "请据此提炼 3 条今天最值得做的今日头条内容选题。要求：\n"
+            "请据此提炼 5 条今天最值得做的今日头条内容选题。要求：\n"
             "1. 每条含 title（8-20字，口语化有钩子）、note（格式：来源：网页搜索｜爆款理由：<为什么火、踩中什么情绪/需求、建议切入角度>）\n"
             "2. 严禁编造具体数据（阅读量/点赞数/政策数字），没把握的写「待核实」\n"
-            "3. 只输出 JSON 数组，不要其他文字：[{\"title\":\"...\",\"note\":\"...\"}]\n"
-            "4. %s" % (v["name"], TODAY, "\n\n".join(corpus[:18]), v["brief"])
+            "3. 下面是近期已写过的选题标题，新选题必须避开：禁止同题重复，也禁止只换个说法重写同一话题（如已写过《永乐大典》流散，就不能再写《永乐大典》册数）。请选全新的题材或全新的切入角度：\n%s\n"
+            "4. 只输出 JSON 数组，不要其他文字：[{\"title\":\"...\",\"note\":\"...\"}]\n"
+            "5. %s" % (v["name"], TODAY, "\n\n".join(corpus[:18]), hist, v["brief"])
         )
         resp = llm_chat([{"role": "user", "content": prompt}], temperature=0.7)
         arr = llm_json(resp)
         if arr:
             topics = []
-            for x in arr[:3]:
+            for x in arr:
                 if not isinstance(x, dict) or not x.get("title"):
+                    continue
+                title = str(x["title"])[:40]
+                # 程序级查重：与历史选题/成稿比对，且与本次批次内去重
+                if is_dup_title(title, used) or is_dup_title(title, [t["title"] for t in topics]):
+                    log("  · 查重剔除重复选题: %s" % title)
                     continue
                 topics.append({
                     "id": "tg%s%s" % (STAMP, len(topics) + 1),
-                    "title": str(x["title"])[:40],
+                    "title": title,
                     "stage": "灵感",
                     "note": str(x.get("note", ""))[:300] + "｜数据来源：GitHub自动搜索",
                     "created": TODAY,
                 })
+                if len(topics) >= 3:
+                    break
             if topics:
-                log("  ✅ 搜索选题 %d 条" % len(topics))
+                log("  ✅ 搜索选题 %d 条（查重后）" % len(topics))
                 return topics, "搜索"
-    # ---- 降级：用已有选题池（尚无成稿的，取最新 3 条） ----
+    # ---- 降级：用已有选题池（与成稿查重后，取最新 3 条） ----
     log("  ↘️ 搜索/提炼失败，降级用仓库已有选题池")
+    dtitles = draft_titles(v, content)
     pool = list(reversed(content.get(v["topics_col"], [])))  # 新的在前
-    done_titles = set()
-    for d in content.get(v["drafts_col"], []):
-        t = str(d.get("text", "")).split("\n")[0].strip("【】")
-        done_titles.add(t)
     picked = []
     for t in pool:
-        if t.get("title") in done_titles:
+        title = t.get("title", "")
+        if not title:
+            continue
+        if is_dup_title(title, dtitles) or is_dup_title(title, [x["title"] for x in picked]):
             continue
         picked.append({
             "id": t.get("id") or ("tg%s%d" % (STAMP, len(picked) + 1)),
-            "title": t.get("title", ""),
+            "title": title,
             "stage": "灵感",
             "note": (t.get("note", "") or "") + "｜数据来源：选题池降级",
             "created": t.get("created", TODAY),
@@ -266,12 +347,10 @@ def main():
             stats.append({"板块": v["name"], "选题": 0, "成稿": 0, "来源": src})
             continue
         drafts = content.setdefault(v["drafts_col"], [])
-        # 幂等：标题已有成稿则跳过
+        # 幂等：与已成稿标题做相似度查重（同题/换皮一律跳过）
+        dtitles = draft_titles(v, content)
         def has_draft(title):
-            for d in drafts:
-                if str(d.get("text", "")).split("\n")[0].strip("【】") == title:
-                    return True
-            return False
+            return is_dup_title(title, dtitles)
 
         made = 0
         seq_base = len(drafts)
