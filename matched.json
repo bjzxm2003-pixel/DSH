@@ -1,5 +1,82 @@
 [
   {
+    "id": "30c24892e678cbbfca38ff28253189fb",
+    "title": "国电电力云南新能源朗山风电场60台风机电网适应性改造公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002002/20260914/d3783669-af9b-4a7c-8590-7941cb922d21.html",
+    "date": "2026-09-14",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-14 05:40:55"
+  },
+  {
+    "id": "8c123f9b688e8739165d03aca04db8e4",
+    "title": "龙源电力龙源（北京）新能源工程技术有限公司2026年风光储机型动态链接库调试技术服务框架采购项目公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260914/b29a2184-add9-4986-bd70-9f3d81e01110.html",
+    "date": "2026-09-14",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-14 05:40:55"
+  },
+  {
+    "id": "48766cb5ad6681ae7e60de9e99543572",
+    "title": "龙源电力龙源（北京）新能源工程技术有限公司2026年日风变流器机型动态链接库调试技术服务框架采购项目公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260914/ff927a16-2d06-4835-9c7c-d4244e026466.html",
+    "date": "2026-09-14",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-14 05:40:55"
+  },
+  {
+    "id": "910349fcd1b74e118a505081c82701ba",
+    "title": "龙源电力龙源（北京）新能源工程技术有限公司2026年远景变流器机型动态链接库调试技术服务框架采购项目公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260914/eb2f6f11-366a-40c7-ba4e-d1e48d0ce5f8.html",
+    "date": "2026-09-14",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-14 05:40:55"
+  },
+  {
+    "id": "47905977c16a5709487d8ad8b93a0c73",
+    "title": "龙源电力龙源（北京）新能源工程技术有限公司2026年金风变流器机型动态链接库调试技术服务框架采购项目公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260914/8bf0c20f-eb26-46ea-9da5-797eb54a377e.html",
+    "date": "2026-09-14",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-14 05:40:55"
+  },
+  {
+    "id": "8b6388a826b9b70451b1e773e15779cd",
+    "title": "龙源电力龙源（北京）新能源工程技术有限公司2026年SVG机型动态链接库调试技术服务框架采购项目公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260914/e09e58b2-f82d-4690-98c0-370dafdc6418.html",
+    "date": "2026-09-14",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-14 05:40:55"
+  },
+  {
+    "id": "b52db7a1fc9beb0b553078a22cb8d465",
+    "title": "重庆公司新能源公司国能重庆万州“千乡万村，驭风行动”项目前期专题报告编制服务公开招标项目（第2次）招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260914/821797d9-24ec-45a3-a2b7-af9331cc757d.html",
+    "date": "2026-09-14",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-14 05:40:55"
+  },
+  {
     "id": "136d104793b9da902cfbe7ee71f38127",
     "title": "甘肃公司巴丹吉林一电巴丹吉林沙漠新能源基地4×1000MW煤电项目UPS电源设备采购公开招标项目招标公告",
     "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002001/20260913/797c63d6-e101-428f-803f-bd56b2616f63.html",
@@ -8,7 +85,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-13 14:01:41"
+    "fetchedAt": "2026-09-14 05:40:55"
   },
   {
     "id": "afc4bf209814a66715820ec7d8c8045c",
@@ -19,7 +96,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-13 14:01:41"
+    "fetchedAt": "2026-09-14 05:40:55"
   },
   {
     "id": "d1d44de78ff936ce09d3863b20c78b64",
@@ -30,7 +107,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-13 14:01:41"
+    "fetchedAt": "2026-09-14 05:40:55"
   },
   {
     "id": "070910eb8f8dde198723f34a5bae80fb",
@@ -41,7 +118,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-13 14:01:41"
+    "fetchedAt": "2026-09-14 05:40:55"
   },
   {
     "id": "83859b9f0c917a69fec2172fafc11321",
@@ -52,7 +129,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-13 14:01:41"
+    "fetchedAt": "2026-09-14 05:40:55"
   },
   {
     "id": "c8958da18c78ebda64335dcd01a971a3",
@@ -63,7 +140,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-13 14:01:41"
+    "fetchedAt": "2026-09-14 05:40:55"
   },
   {
     "id": "508d32354adb5ade8456ba72c30249f4",
@@ -74,7 +151,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-13 14:01:41"
+    "fetchedAt": "2026-09-14 05:40:55"
   },
   {
     "id": "06ac5d1743f04875aa1b22d33fb27a30",
@@ -85,7 +162,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-13 14:01:41"
+    "fetchedAt": "2026-09-14 05:40:55"
   },
   {
     "id": "19fc2cfa98f3c7ed88caec6031dcb89e",
@@ -96,7 +173,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-13 14:01:41"
+    "fetchedAt": "2026-09-14 05:40:55"
   },
   {
     "id": "452b88dff2d920a3ab097bebf68df7d0",
@@ -107,7 +184,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-13 14:01:41"
+    "fetchedAt": "2026-09-14 05:40:55"
   },
   {
     "id": "9426e49c37fc23d8dd4c3bb14c230272",
@@ -118,7 +195,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-13 14:01:41"
+    "fetchedAt": "2026-09-14 05:40:55"
   },
   {
     "id": "7069930ca389476fd6b5c5bfb9cdc32b",
@@ -129,7 +206,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-13 14:01:41"
+    "fetchedAt": "2026-09-14 05:40:55"
   },
   {
     "id": "08e9f52fba7eaf4a58381787a4380999",
@@ -140,7 +217,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-13 14:01:41"
+    "fetchedAt": "2026-09-14 05:40:55"
   },
   {
     "id": "793ed49317e24363b1bb2b12720ff4b9",
@@ -151,39 +228,6 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-13 14:01:41"
-  },
-  {
-    "id": "1357b214ab65bd1883268e1264380efb",
-    "title": "国源电力哈密煤电新能源分公司风电机组机舱高温运行环境智能调控关键技术研究与应用项目公开招标项目（第2次）招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260910/bf304103-87d0-47a3-8c89-2af1454cb8aa.html",
-    "date": "2026-09-10",
-    "status": "待确认",
-    "buy": "",
-    "open": "",
-    "source": "github",
-    "fetchedAt": "2026-09-13 14:01:41"
-  },
-  {
-    "id": "2fac902b94fd597330d88a3c49d7757a",
-    "title": "龙源电力内蒙古龙源新能源发展有限公司机组偏航物料物资长协采购公开招标项目招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002001/20260910/2bf412d4-dde7-4a13-8651-bd83ddcf6208.html",
-    "date": "2026-09-10",
-    "status": "待确认",
-    "buy": "",
-    "open": "",
-    "source": "github",
-    "fetchedAt": "2026-09-13 14:01:41"
-  },
-  {
-    "id": "6f7fe415e053c3cb777c961d3c347679",
-    "title": "国源电力哈密煤电新能源分公司基于红外热波无损检测技术的风机叶片智能巡检系统开发项目公开招标项目（第2次）招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260910/987f23ff-e42c-4f0c-b3d4-f66a57fa1987.html",
-    "date": "2026-09-10",
-    "status": "待确认",
-    "buy": "",
-    "open": "",
-    "source": "github",
-    "fetchedAt": "2026-09-13 14:01:41"
+    "fetchedAt": "2026-09-14 05:40:55"
   }
 ]
