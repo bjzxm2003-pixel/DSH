@@ -233,11 +233,32 @@ def used_titles(v, content):
 
 # ---------- 第一步：选题 ----------
 
+def build_topics(arr, used, v, src_tag):
+    """从 LLM 返回的 JSON 数组里挑出查重后的选题（最多 3 条）"""
+    topics = []
+    for x in (arr or []):
+        if not isinstance(x, dict) or not x.get("title"):
+            continue
+        title = str(x["title"])[:40]
+        if is_dup_title(title, used) or is_dup_title(title, [t["title"] for t in topics]):
+            log("  · 查重剔除重复选题: %s" % title)
+            continue
+        topics.append({
+            "id": "tg%s%s" % (STAMP, len(topics) + 1),
+            "title": title,
+            "stage": "灵感",
+            "note": str(x.get("note", ""))[:300] + "｜数据来源：" + src_tag,
+            "created": TODAY,
+        })
+        if len(topics) >= 3:
+            break
+    return topics
+
+
 def scout_topics(v, content):
-    """搜索 + LLM 提炼选题（带历史查重）。失败降级用已有选题池。来源标 github。"""
+    """选题侦察：搜索 + LLM；搜索无果时改由 LLM 自由策划，保证持续产出（不依赖搜索）。"""
     log("\n🔍 [%s] 开始选题侦察" % v["name"])
     used = used_titles(v, content)
-    # 搜索词按日期轮换：不同天用不同组合，避免天天搜到同一批结果
     qs = v["search_queries"]
     day = int(TODAY.split("-")[2])
     picked_queries = [qs[(day + i) % len(qs)] for i in range(3)]
@@ -247,10 +268,10 @@ def scout_topics(v, content):
         log("  搜索「%s」→ %d 条结果" % (q, len(hits)))
         for h in hits:
             corpus.append("标题: %s\n摘要: %s" % (h["title"], h["snippet"]))
-        time.sleep(1.5)  # 礼貌限速
+        time.sleep(1.5)
 
+    hist = "\n".join("- " + u for u in used[-25:]) or "（暂无）"
     if corpus:
-        hist = "\n".join("- " + u for u in used[-25:]) or "（暂无）"
         prompt = (
             "以下是今天从搜索引擎抓到的关于「%s」赛道的网页标题和摘要（抓取时间 %s）：\n\n%s\n\n"
             "请据此提炼 5 条今天最值得做的今日头条内容选题。要求：\n"
@@ -261,33 +282,31 @@ def scout_topics(v, content):
             "5. %s" % (v["name"], TODAY, "\n\n".join(corpus[:18]), hist, v["brief"])
         )
         resp = llm_chat([{"role": "user", "content": prompt}], temperature=0.7)
-        arr = llm_json(resp)
-        if arr:
-            topics = []
-            for x in arr:
-                if not isinstance(x, dict) or not x.get("title"):
-                    continue
-                title = str(x["title"])[:40]
-                # 程序级查重：与历史选题/成稿比对，且与本次批次内去重
-                if is_dup_title(title, used) or is_dup_title(title, [t["title"] for t in topics]):
-                    log("  · 查重剔除重复选题: %s" % title)
-                    continue
-                topics.append({
-                    "id": "tg%s%s" % (STAMP, len(topics) + 1),
-                    "title": title,
-                    "stage": "灵感",
-                    "note": str(x.get("note", ""))[:300] + "｜数据来源：GitHub自动搜索",
-                    "created": TODAY,
-                })
-                if len(topics) >= 3:
-                    break
-            if topics:
-                log("  ✅ 搜索选题 %d 条（查重后）" % len(topics))
-                return topics, "搜索"
-    # ---- 降级：用已有选题池（与成稿查重后，取最新 3 条） ----
-    log("  ↘️ 搜索/提炼失败，降级用仓库已有选题池")
+        topics = build_topics(llm_json(resp), used, v, "GitHub自动搜索")
+        if topics:
+            log("  ✅ 搜索选题 %d 条（查重后）" % len(topics))
+            return topics, "搜索"
+        log("  ↘️ 搜索提炼为空，转 LLM 自由策划")
+
+    # 搜索无果或提炼为空：LLM 直接基于赛道 brief + 历史自由策划，不依赖搜索
+    prompt = (
+        "你是「%s」赛道的内容策划。请不依赖任何外部搜索，直接构思 5 条今天最值得做的今日头条选题。要求：\n"
+        "1. 每条含 title（8-20字，口语化、有钩子）、note（格式：来源：自由策划｜爆款理由：<为什么火、踩中什么情绪/需求、建议切入角度>）\n"
+        "2. 严禁编造具体数据；没把握写「待核实」\n"
+        "3. 下面是你近期已写过的选题标题，新选题必须避开（禁止同题重复、也禁止只换个说法重写同一话题，要选全新题材或全新切入角度）：\n%s\n"
+        "4. 只输出 JSON 数组：[{\"title\":\"...\",\"note\":\"...\"}]\n"
+        "5. %s" % (v["name"], hist, v["brief"])
+    )
+    resp = llm_chat([{"role": "user", "content": prompt}], temperature=0.9)
+    topics = build_topics(llm_json(resp), used, v, "LLM自由策划")
+    if topics:
+        log("  ✅ 自由策划选题 %d 条（查重后）" % len(topics))
+        return topics, "自由策划"
+
+    # 最后兜底：仓库已有选题池（与成稿查重后取最新 3 条）
+    log("  ↘️ LLM 失败，降级用仓库已有选题池")
     dtitles = draft_titles(v, content)
-    pool = list(reversed(content.get(v["topics_col"], [])))  # 新的在前
+    pool = list(reversed(content.get(v["topics_col"], [])))
     picked = []
     for t in pool:
         title = t.get("title", "")
@@ -306,7 +325,6 @@ def scout_topics(v, content):
             break
     log("  ✅ 降级选题 %d 条" % len(picked))
     return picked, "选题池降级"
-
 
 # ---------- 第二步：成稿 ----------
 
