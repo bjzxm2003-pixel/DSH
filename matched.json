@@ -1,5 +1,181 @@
 [
   {
+    "id": "d7491f661254be42cb2c79351b60b64b",
+    "title": "国家能源集团2026年第三批煤炭设备（圆锥移动式破碎机）集中采购公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002001/20260918/953e1ef7-69a8-4e3a-b190-4f99481506cd.html",
+    "date": "2026-09-18",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-18 14:03:02"
+  },
+  {
+    "id": "e9ad72b5353e433b124e2d99af9ded81",
+    "title": "国家能源集团2026年第三批煤炭设备（移动变电站）集中采购公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002001/20260918/ed3d207d-1cc3-4ae8-b9a6-fbb3c2f2fbd9.html",
+    "date": "2026-09-18",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-18 14:03:02"
+  },
+  {
+    "id": "f317b73a1f8e905f04919714876d0f75",
+    "title": "新疆能源乌东煤矿2026-2028年液压支架大修服务公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260918/12a32c1c-1062-4fc5-8956-9a04fc7dc050.html",
+    "date": "2026-09-18",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-18 14:03:02"
+  },
+  {
+    "id": "a9184ecb2c0346d9d1fc146de5e5c146",
+    "title": "新疆能源乌东煤矿2026-2028年刮板机、转载机等综采三机大修服务公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260918/a10798d2-cc67-4504-bef0-42f0a344dbe6.html",
+    "date": "2026-09-18",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-18 14:03:02"
+  },
+  {
+    "id": "94a58f87ad79da1b4af3cd4465acd2f0",
+    "title": "龙源电力广西龙源新能源有限公司所属场站水泥路面硬化及道路、排水沟维护长协施工公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002002/20260918/b019a72b-a0c6-460f-9503-9718caebd134.html",
+    "date": "2026-09-18",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-18 14:03:02"
+  },
+  {
+    "id": "00b30616b79dcb61c8db583f96398a3d",
+    "title": "龙源电力河北龙源新能源有限公司所属新能源场站、集控中心电力监控系统安全加固与涉网合规改造服务公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260918/462c7e35-6505-4cac-820a-9ff5f68836e6.html",
+    "date": "2026-09-18",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-18 14:03:02"
+  },
+  {
+    "id": "97defc694681b70ab0120789a09746bc",
+    "title": "龙源电力国家能源集团江苏射阳新能源有限公司国能龙源射阳二期70万千瓦海上风电项目前期专题采购公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260918/a3b5b757-027a-4b79-8af7-83a7ef7883e4.html",
+    "date": "2026-09-18",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-18 14:03:02"
+  },
+  {
+    "id": "04460b009f3952bef3be0aab9dfda612",
+    "title": "龙源电力江苏海上龙源新能源有限公司龙源江苏大丰H4-1海上风电项目、龙源江苏大丰H6-1海上风电项目前期专题技术服务采购公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260918/66a492d2-cc4c-4b24-81c8-b637de17a2e4.html",
+    "date": "2026-09-18",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-18 14:03:02"
+  },
+  {
+    "id": "78b9ac6d7bb11e3f949d6d9acabf5401",
+    "title": "国华投资国华（赤城）风电有限公司国能东华200MW风电绿电直连项目送出线路临时用地确权及土地手续办理咨询服务项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260918/75719431-2c98-45ef-a705-be074fb789bd.html",
+    "date": "2026-09-18",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-18 14:03:02"
+  },
+  {
+    "id": "f959207d2e111db402c2c5108c40b218",
+    "title": "国华投资国华爱依斯（黄骅）风电有限公司黄骅风电场一期（150MW）项目勘察设计服务公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260918/db63717d-f3ed-41af-9304-d9d22bab3b6f.html",
+    "date": "2026-09-18",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-18 14:03:02"
+  },
+  {
+    "id": "c43fd476141ef56e89390facba1e8dd0",
+    "title": "甘肃公司巴丹吉林一电巴丹吉林沙漠新能源基地4×1000MW煤电项目直流系统设备采购公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002001/20260918/cebe2bc5-d7c6-4571-9f5e-e8e0a31658b9.html",
+    "date": "2026-09-18",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-18 14:03:02"
+  },
+  {
+    "id": "291f5f40c979176f47a0115b58e9dd97",
+    "title": "贵州公司都匀新能源公司五岔坡区域风电项目锌锗矿压覆情况安全论证公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260918/7b4eaf61-54c1-4073-b8e0-ffd4790829f1.html",
+    "date": "2026-09-18",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-18 14:03:02"
+  },
+  {
+    "id": "2c1eda6a0414cdbcbc95ad1d0bbb8e4d",
+    "title": "甘肃公司巴丹吉林一电巴丹吉林沙漠新能源基地4×1000MW煤电项目蓄电池设备采购公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002001/20260918/53413a87-b758-4688-9a60-3d3cab3fe53b.html",
+    "date": "2026-09-18",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-18 14:03:02"
+  },
+  {
+    "id": "99a04a4789f89416650933a3e38a7831",
+    "title": "国家能源集团物资有限公司2-PH液相精制催化剂采购项目公开招标项目（第2次）招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002001/20260918/fcc5d266-06d2-4f61-b7b1-b77d7a7a0a7f.html",
+    "date": "2026-09-18",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-18 14:03:02"
+  },
+  {
+    "id": "69bb0f67a4491d68e1e01bc0837fe69d",
+    "title": "安徽公司合肥电厂污泥掺烧一期EPC总承包工程公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002002/20260918/2333ebe0-f420-46ee-b385-789d63846c71.html",
+    "date": "2026-09-18",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-18 14:03:02"
+  },
+  {
+    "id": "c3dea87d3b680ff052a6b3a2d9eb73d0",
+    "title": "江西公司新能源公司12个场站零星修理公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260918/8402909d-058e-4fc3-bf37-5e6c212f631f.html",
+    "date": "2026-09-18",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-09-18 14:03:02"
+  },
+  {
     "id": "8adde459d53235547f0183e2f427e486",
     "title": "榆林能源青龙寺煤矿封闭不良钻孔、东部盘区薄基岩灾害治理及评价服务公开招标项目招标公告",
     "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260918/8531b958-be7e-4e7f-b1fb-a66f30659715.html",
@@ -8,7 +184,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-18 05:29:16"
+    "fetchedAt": "2026-09-18 14:03:02"
   },
   {
     "id": "e36a10d613cb87c69fe5de23585b8309",
@@ -19,7 +195,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-18 05:29:16"
+    "fetchedAt": "2026-09-18 14:03:02"
   },
   {
     "id": "b80c57859dc4bc06b7c1877ff26dd1c2",
@@ -30,7 +206,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-18 05:29:16"
+    "fetchedAt": "2026-09-18 14:03:02"
   },
   {
     "id": "04603d3a92ad5aeab9df947c450da43f",
@@ -41,7 +217,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-18 05:29:16"
+    "fetchedAt": "2026-09-18 14:03:02"
   },
   {
     "id": "d2e3f534121495376ea1f0a18152ff9d",
@@ -52,7 +228,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-18 05:29:16"
+    "fetchedAt": "2026-09-18 14:03:02"
   },
   {
     "id": "9b5e04266b8b3d626ff41a36274048c5",
@@ -63,7 +239,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-18 05:29:16"
+    "fetchedAt": "2026-09-18 14:03:02"
   },
   {
     "id": "24e89b171ca81fcd6e346e67caadb225",
@@ -74,7 +250,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-18 05:29:16"
+    "fetchedAt": "2026-09-18 14:03:02"
   },
   {
     "id": "4a5464e4a785e2d8b17e85dc5f6b01d1",
@@ -85,116 +261,6 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-09-18 05:29:16"
-  },
-  {
-    "id": "688d869526c65b6129b6a54ed07a6582",
-    "title": "榆林化工神华榆林循环经济煤炭综合利用项目MTO装置EPC总承包项目招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002002/20260918/fcb0c84f-4d98-483a-b6a6-611c856abb6b.html",
-    "date": "2026-09-18",
-    "status": "待确认",
-    "buy": "",
-    "open": "",
-    "source": "github",
-    "fetchedAt": "2026-09-18 05:29:16"
-  },
-  {
-    "id": "0db8cf7249a97a573424909e74b96e26",
-    "title": "置业公司山东置业国投蒙东风电项目部物料用品长协采购公开招标项目招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002001/20260917/af064a6a-3d2f-427c-a72e-346587779705.html",
-    "date": "2026-09-17",
-    "status": "待确认",
-    "buy": "",
-    "open": "",
-    "source": "github",
-    "fetchedAt": "2026-09-18 05:29:16"
-  },
-  {
-    "id": "58be6a57380ac9924ea8a65dcb531895",
-    "title": "雁宝能源国能宝日希勒能源有限公司基于威胁动态分析的分级管控平台建设服务公开招标项目招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260917/a52804fb-10c2-4a23-847e-394c26d29c11.html",
-    "date": "2026-09-17",
-    "status": "待确认",
-    "buy": "",
-    "open": "",
-    "source": "github",
-    "fetchedAt": "2026-09-18 05:29:16"
-  },
-  {
-    "id": "322160f510acda4dc35553621bd0d2f9",
-    "title": "榆林化工神华榆林循环经济煤炭综合利用项目除盐水及凝结水站EPC总承包公开招标项目招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002002/20260917/4af0d01f-8053-40fa-807b-718ef8cd4ab4.html",
-    "date": "2026-09-17",
-    "status": "待确认",
-    "buy": "",
-    "open": "",
-    "source": "github",
-    "fetchedAt": "2026-09-18 05:29:16"
-  },
-  {
-    "id": "ff62a9332b9b350e6806a6e2a9986f47",
-    "title": "雁宝能源国能宝日希勒能源有限公司工业系统软件供应链网络安全能力建设服务公开招标项目招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260917/c8fa6159-acbc-41ff-b160-7311eb093857.html",
-    "date": "2026-09-17",
-    "status": "待确认",
-    "buy": "",
-    "open": "",
-    "source": "github",
-    "fetchedAt": "2026-09-18 05:29:16"
-  },
-  {
-    "id": "d3800fa62a2d3c2ea4786ab9808fad31",
-    "title": "雁宝能源内蒙古大雁矿业集团有限责任公司2026年安全费杂品及建工材料采购公开招标项目招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002001/20260917/dee0dde6-b345-43ae-9603-c94581da831c.html",
-    "date": "2026-09-17",
-    "status": "待确认",
-    "buy": "",
-    "open": "",
-    "source": "github",
-    "fetchedAt": "2026-09-18 05:29:16"
-  },
-  {
-    "id": "85ff540bf14fcb3632c9766dcf6f7b1d",
-    "title": "雁宝能源内蒙古大雁矿业集团有限责任公司2026年第三煤矿三季度生产材料采购公开招标项目招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002001/20260917/9f18ea13-62e9-4b4a-b87d-e0637764d43a.html",
-    "date": "2026-09-17",
-    "status": "待确认",
-    "buy": "",
-    "open": "",
-    "source": "github",
-    "fetchedAt": "2026-09-18 05:29:16"
-  },
-  {
-    "id": "4cccede23b37a55f5df2663e05c4392b",
-    "title": "包头能源万利一矿破碎机维修服务公开招标项目招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260917/42afca86-fa22-4bf6-81a0-98a09aa9c677.html",
-    "date": "2026-09-17",
-    "status": "待确认",
-    "buy": "",
-    "open": "",
-    "source": "github",
-    "fetchedAt": "2026-09-18 05:29:16"
-  },
-  {
-    "id": "4e730f49007654f794692b12971a0387",
-    "title": "辽宁公司康平公司小城子150MW、沙金150MW风电项目勘察设计服务公开招标项目招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20260917/c4b6b2d7-6fcb-44ce-bf7b-a8458c37efa8.html",
-    "date": "2026-09-17",
-    "status": "待确认",
-    "buy": "",
-    "open": "",
-    "source": "github",
-    "fetchedAt": "2026-09-18 05:29:16"
-  },
-  {
-    "id": "50ac02583f7fd180a2411f486d9202ec",
-    "title": "浙江公司宁海电厂6号机组增加湿式除尘器改造工程EPC总承包项目公开招标项目招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002002/20260917/e034dfcd-49ab-4686-aa62-5cbdd70bafac.html",
-    "date": "2026-09-17",
-    "status": "待确认",
-    "buy": "",
-    "open": "",
-    "source": "github",
-    "fetchedAt": "2026-09-18 05:29:16"
+    "fetchedAt": "2026-09-18 14:03:02"
   }
 ]
