@@ -1,3 +1,4 @@
+import re
 import requests
 from bs4 import BeautifulSoup
 import hashlib
@@ -102,6 +103,62 @@ def send_to_wechat(title, content):
     except Exception as e:
         print(f"推送异常: {e}")
 
+def _norm_dt(s):
+    """把详情页里抓到的日期片段归一化为 'YYYY-MM-DD HH:MM:SS' 或 'YYYY-MM-DD'。"""
+    if not s:
+        return ""
+    m = re.search(r"(\d{4})[-年.](\d{1,2})[-月.](\d{1,2})[日]?\s*(\d{1,2}:\d{2}(?::\d{2})?)?", s)
+    if not m:
+        return ""
+    y, mo, d = m.group(1), m.group(2).zfill(2), m.group(3).zfill(2)
+    t = m.group(4) or ""
+    if t:
+        p = t.split(":")
+        if len(p) == 2:
+            t = "%s:%s:00" % (p[0].zfill(2), p[1].zfill(2))
+        else:
+            t = "%s:%s:%s" % (p[0].zfill(2), p[1].zfill(2), p[2].zfill(2))
+        return "%s-%s-%s %s" % (y, mo, d, t)
+    return "%s-%s-%s" % (y, mo, d)
+
+
+def fetch_detail(link):
+    """访问招标详情页，抽取购标截止时间(buy)与开标时间(open)。
+    失败或字段缺失一律返回空串（工作台侧按"未知"处理，不影响其他条目）。"""
+    res = {"buy": "", "open": ""}
+    if not link:
+        return res
+    try:
+        resp = requests.get(
+            link,
+            headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                                    "AppleWebKit/537.36"},
+            timeout=20,
+        )
+        resp.encoding = "utf-8"
+        html = resp.text
+    except Exception as e:
+        print("  ⚠️ 详情页抓取失败 %s: %s" % (link, repr(e)[:120]))
+        return res
+    text = re.sub(r"<[^>]+>", " ", html)
+    # 购标截止：兼容多种叫法（购买/售卖/获取/发售 截止时间）
+    for label in ("招标文件购买截止时间", "招标文件售卖截止时间", "购买招标文件截止时间",
+                  "招标文件获取截止时间", "招标文件发售截止时间", "购标截止时间"):
+        m = re.search(re.escape(label) + r"\s*[:：]?\s*"
+                      r"(\d{4}[-年.]\d{1,2}[-月.]\d{1,2}[日]?"
+                      r"(?:\s*\d{1,2}:\d{2}(?::\d{2})?)?)", text)
+        if m:
+            res["buy"] = _norm_dt(m.group(1))
+            break
+    # 开标时间（常与"投标截止时间"同行，形如"…及开标时间为YYYY-MM-DD HH:MM:SS"）
+    m = re.search(r"开标时间\s*[:：]?\s*为?\s*"
+                  r"(\d{4}[-年.]\d{1,2}[-月.]\d{1,2}[日]?"
+                  r"(?:\s*\d{1,2}:\d{2}(?::\d{2})?)?)", text)
+    if m:
+        res["open"] = _norm_dt(m.group(1))
+    return res
+
+
 def main():
     print("=" * 50)
     print("开始抓取招标信息...")
@@ -112,6 +169,15 @@ def main():
     print(f"共抓取 {len(all_tenders)} 条")
     matched = filter_by_keywords(all_tenders)
     print(f"匹配关键词 {len(matched)} 条")
+    # 访问每条命中项的详情页，抽取购标截止时间(buy)与开标时间(open)
+    # 工作台「GitHub 待机监控」按 buy 过滤"未到购标截止日"的项目；缺失则视为未知、全显
+    for t in matched:
+        det = fetch_detail(t["link"])
+        t["buy"] = det["buy"]
+        t["open"] = det["open"]
+        if det["buy"]:
+            print(f"  · 购标截止 {det['buy']} ← {t['title'][:22]}")
+        time.sleep(0.6)
     # 落盘完整匹配列表（路线 C：提交回仓库后作为工作台 GitHub 监控数据源，待机也能更新看板）
     fetched_at = time.strftime("%Y-%m-%d %H:%M:%S")
     matched_out = [{
@@ -120,8 +186,8 @@ def main():
         "link": t["link"],
         "date": t["date"],
         "status": "待确认",
-        "buy": "",
-        "open": "",
+        "buy": t.get("buy", ""),
+        "open": t.get("open", ""),
         "source": "github",
         "fetchedAt": fetched_at
     } for t in matched]
