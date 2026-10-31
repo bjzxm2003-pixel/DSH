@@ -1,5 +1,49 @@
 [
   {
+    "id": "d0b8aa1ad1fa4b92e5b43946e2b06257",
+    "title": "龙源电力内蒙古龙源蒙东新能源有限公司蒙东区域管辖风电场以大代小申报方案咨询服务公开招标招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261031/f2b76946fce847a1987295cd1a26b6fc.html",
+    "date": "2026-10-31",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-10-31 06:36:34"
+  },
+  {
+    "id": "be2a6449d49a4635f815139920cb62ae",
+    "title": "广西公司福阳公司灌阳西山南江风电场辅助基建业务外委服务公开招标招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261031/cd9a24fa907540d7b75f9ee09b94eb29.html",
+    "date": "2026-10-31",
+    "status": "待确认",
+    "buy": "2026-11-05 16:00:00",
+    "open": "2026-11-20 10:00:00",
+    "source": "github",
+    "fetchedAt": "2026-10-31 06:36:34"
+  },
+  {
+    "id": "bb7904c2093e8472c438fba7c98550b5",
+    "title": "新疆能源2026-2028年露天煤矿采剥工程测绘服务公开招标招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261031/1f973e27209f47ad9118ec6cba6397b0.html",
+    "date": "2026-10-31",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-10-31 06:36:34"
+  },
+  {
+    "id": "0bfc4cb6b09ad881cf804788cd0e1bd7",
+    "title": "国电电力内蒙古新能源开发有限公司各场站升压站及对端间隔设备及线路维修服务框架公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261031/8b0c778c-1b82-47c9-ad01-548687f375e5.html",
+    "date": "2026-10-31",
+    "status": "待确认",
+    "buy": "2026-11-06 16:00:00",
+    "open": "2026-11-23 09:00:00",
+    "source": "github",
+    "fetchedAt": "2026-10-31 06:36:34"
+  },
+  {
     "id": "af65cca4cca1d139dd7985aea69d8d4f",
     "title": "新疆能源青松矿业文体中心等工程公开招标项目招标公告",
     "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002002/20261030/6716166c-7b2c-43aa-bcbe-25b0af2c1d3f.html",
@@ -8,7 +52,7 @@
     "buy": "2026-11-05 17:00:00",
     "open": "2026-11-20 09:00:00",
     "source": "github",
-    "fetchedAt": "2026-10-30 16:29:41"
+    "fetchedAt": "2026-10-31 06:36:34"
   },
   {
     "id": "5b3f1db796688013efbf7194a8aaae5c",
@@ -16,10 +60,10 @@
     "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002002/20261030/fd7b70f4-30f0-4f21-a0fc-a233db460924.html",
     "date": "2026-10-30",
     "status": "待确认",
-    "buy": "",
-    "open": "",
+    "buy": "2026-11-05 17:00:00",
+    "open": "2026-11-20 09:00:00",
     "source": "github",
-    "fetchedAt": "2026-10-30 16:29:41"
+    "fetchedAt": "2026-10-31 06:36:34"
   },
   {
     "id": "30c8c0a35aafa533ad70177074b80877",
@@ -30,7 +74,7 @@
     "buy": "2026-11-05 16:00:00",
     "open": "2026-11-20 09:00:00",
     "source": "github",
-    "fetchedAt": "2026-10-30 16:29:41"
+    "fetchedAt": "2026-10-31 06:36:34"
   },
   {
     "id": "c171f54762bca7a3967ea5b9d3fcfe4c",
@@ -38,10 +82,10 @@
     "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002001/20261030/dc2f0287-18c9-40a5-a70d-fd6fe22e1a0b.html",
     "date": "2026-10-30",
     "status": "待确认",
-    "buy": "2026-11-05 17:00:00",
-    "open": "2026-11-20 09:00:00",
+    "buy": "",
+    "open": "",
     "source": "github",
-    "fetchedAt": "2026-10-30 16:29:41"
+    "fetchedAt": "2026-10-31 06:36:34"
   },
   {
     "id": "6ae6dbc623ea9ab8f013147d6ed381a6",
@@ -49,10 +93,10 @@
     "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002001/20261030/5f60dc73-4cf2-4dc8-ae24-d360aaa724e3.html",
     "date": "2026-10-30",
     "status": "待确认",
-    "buy": "",
-    "open": "",
+    "buy": "2026-11-05 12:00:00",
+    "open": "2026-11-23 09:00:00",
     "source": "github",
-    "fetchedAt": "2026-10-30 16:29:41"
+    "fetchedAt": "2026-10-31 06:36:34"
   },
   {
     "id": "054fb54708740f5ffcc627146f19b74a",
@@ -63,7 +107,7 @@
     "buy": "2026-11-06 16:00:00",
     "open": "2026-11-23 09:00:00",
     "source": "github",
-    "fetchedAt": "2026-10-30 16:29:41"
+    "fetchedAt": "2026-10-31 06:36:34"
   },
   {
     "id": "2afeae1f8b98641c3f545af9817c098e",
@@ -74,7 +118,7 @@
     "buy": "2026-11-05 16:00:00",
     "open": "2026-11-24 09:00:00",
     "source": "github",
-    "fetchedAt": "2026-10-30 16:29:41"
+    "fetchedAt": "2026-10-31 06:36:34"
   },
   {
     "id": "067495a1752d7a3e85ad40e282c40f32",
@@ -82,10 +126,10 @@
     "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261030/902c56da-a860-4ac1-bbd5-de7409d706a2.html",
     "date": "2026-10-30",
     "status": "待确认",
-    "buy": "2026-11-06 16:00:00",
-    "open": "2026-11-23 16:00:00",
+    "buy": "",
+    "open": "",
     "source": "github",
-    "fetchedAt": "2026-10-30 16:29:41"
+    "fetchedAt": "2026-10-31 06:36:34"
   },
   {
     "id": "0824b7d557a4800990a901966b745578",
@@ -93,10 +137,10 @@
     "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002001/20261030/1fc3ef88c9924f528688b2a378fbd951.html",
     "date": "2026-10-30",
     "status": "待确认",
-    "buy": "",
-    "open": "",
+    "buy": "2026-11-05 16:00:00",
+    "open": "2026-11-20 09:00:00",
     "source": "github",
-    "fetchedAt": "2026-10-30 16:29:41"
+    "fetchedAt": "2026-10-31 06:36:34"
   },
   {
     "id": "92adc4091e8d4ca144cbc4d413c84041",
@@ -107,7 +151,7 @@
     "buy": "2026-11-06 16:00:00",
     "open": "2026-11-24 10:00:00",
     "source": "github",
-    "fetchedAt": "2026-10-30 16:29:41"
+    "fetchedAt": "2026-10-31 06:36:34"
   },
   {
     "id": "a7b8fadf36e918e465f77c7db91fbbf8",
@@ -115,10 +159,10 @@
     "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261030/d4cba127-f904-4968-a970-706651f60395.html",
     "date": "2026-10-30",
     "status": "待确认",
-    "buy": "2026-11-06 16:00:00",
-    "open": "2026-11-24 10:00:00",
+    "buy": "",
+    "open": "",
     "source": "github",
-    "fetchedAt": "2026-10-30 16:29:41"
+    "fetchedAt": "2026-10-31 06:36:34"
   },
   {
     "id": "4d23d28deca3f35739d21c00fa42e28e",
@@ -126,10 +170,10 @@
     "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002002/20261030/ce314759-e912-4bc8-80d6-0fc52c9cd856.html",
     "date": "2026-10-30",
     "status": "待确认",
-    "buy": "2026-11-06 16:00:00",
-    "open": "2026-11-24 09:00:00",
+    "buy": "",
+    "open": "",
     "source": "github",
-    "fetchedAt": "2026-10-30 16:29:41"
+    "fetchedAt": "2026-10-31 06:36:34"
   },
   {
     "id": "8603c609b43990c6e9276ffeb27a33bb",
@@ -137,10 +181,109 @@
     "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261030/38a0cf5c684e4b74a3619784278c50e4.html",
     "date": "2026-10-30",
     "status": "待确认",
+    "buy": "2026-11-05 16:00:00",
+    "open": "2026-11-23 10:00:00",
+    "source": "github",
+    "fetchedAt": "2026-10-31 06:36:34"
+  },
+  {
+    "id": "55811aef970dbda9347972ffd10cab9a",
+    "title": "龙源电力龙源（北京）新能源工程技术有限公司龙源电力龙源（北京）新能源工程技术有限公司风电机组300系列数据采集装置器件加工服务长协公开招标公开招标招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261030/ebe72f9d650e490aa280d822997a3ef3.html",
+    "date": "2026-10-30",
+    "status": "待确认",
+    "buy": "2026-11-05 16:00:00",
+    "open": "2026-11-23 10:00:00",
+    "source": "github",
+    "fetchedAt": "2026-10-31 06:36:34"
+  },
+  {
+    "id": "b0a6f5236e06f0c1c2acd3aab0f38ac2",
+    "title": "龙源电力辽宁龙源新能源发展有限公司辽宁龙源新能源发展有限公司2026至2028年风电场输电线路检修维护长协框架招标采购项目公开招标招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261030/e54e30417f374a5aa3e2f01b481df6a5.html",
+    "date": "2026-10-30",
+    "status": "待确认",
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-10-30 16:29:41"
+    "fetchedAt": "2026-10-31 06:36:34"
+  },
+  {
+    "id": "d9b9db00459363ba7be42f4bd3a91fc4",
+    "title": "新疆能源乌东煤矿2026-2028年综采智能化系统维修业务外委专业化服务公开招标招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261030/2dfb523273454892aa0b67dd69ddf83e.html",
+    "date": "2026-10-30",
+    "status": "待确认",
+    "buy": "2026-11-05 16:00:00",
+    "open": "2026-11-20 10:00:00",
+    "source": "github",
+    "fetchedAt": "2026-10-31 06:36:34"
+  },
+  {
+    "id": "a0f71c21936c0c0cd8973b35e832bbe9",
+    "title": "国电电力浙江舟山海上风电开发有限公司2027-2028年普陀风电场委托运营及2027年象海风电场委托运营服务公开招标招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261030/d2976e5489734b779fd664f70c8d67c6.html",
+    "date": "2026-10-30",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-10-31 06:36:34"
+  },
+  {
+    "id": "6f0229a083ee45f20dddf3abc7b84bb5",
+    "title": "国电电力国电象山海上风电有限公司国电电力-象山海上风电-2027年象海风电场运维船租赁项目-招标采购-服务公开招标招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261030/8b6229a6234c4f0783c844ccfb729102.html",
+    "date": "2026-10-30",
+    "status": "待确认",
+    "buy": "2026-11-05 16:00:00",
+    "open": "2026-11-23 10:00:00",
+    "source": "github",
+    "fetchedAt": "2026-10-31 06:36:34"
+  },
+  {
+    "id": "e83142d1fd1aa2d190aa6e97fde55af4",
+    "title": "国华投资国华（江苏）风电有限公司等9家公司2026-2028年车辆维保服务公开招标招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261030/3f4eb19f59f444b9bc233847168622c3.html",
+    "date": "2026-10-30",
+    "status": "待确认",
+    "buy": "2026-11-05 16:00:00",
+    "open": "2026-11-23 10:00:00",
+    "source": "github",
+    "fetchedAt": "2026-10-31 06:36:34"
+  },
+  {
+    "id": "59938452262eb8f088ad46bed3eb06a3",
+    "title": "广西公司国电电力东兰巴华坡风电场（一期）项目运输道路迁改施工总承包项目公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002002/20261030/ced67a39-27b4-4004-ab9f-758797825188.html",
+    "date": "2026-10-30",
+    "status": "待确认",
+    "buy": "2026-11-06 16:00:00",
+    "open": "2026-11-23 09:00:00",
+    "source": "github",
+    "fetchedAt": "2026-10-31 06:36:34"
+  },
+  {
+    "id": "edad1470d5b86b428cd73a0af3bacaa8",
+    "title": "雄安公司及保定公司新能源项目2027-2029年度运维服务公开招标招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261030/7b1080a1f12c432c8bb8d7526f0be701.html",
+    "date": "2026-10-30",
+    "status": "待确认",
+    "buy": "2026-11-05 16:00:00",
+    "open": "2026-11-20 09:00:00",
+    "source": "github",
+    "fetchedAt": "2026-10-31 06:36:34"
+  },
+  {
+    "id": "f30e90c09e9e42f91bcf8d82f3bb6e30",
+    "title": "湖南公司湖南公司2026年光伏电站委托运行维护管理服务公开招标公开招标包2招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261030/a988ee91bd324eb6a6b84426bcf93371.html",
+    "date": "2026-10-30",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-10-31 06:36:34"
   },
   {
     "id": "befb349924f715058acd648c3486b521",
@@ -148,10 +291,10 @@
     "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261030/06e62dd61015440f851021ca6aca44a7.html",
     "date": "2026-10-30",
     "status": "待确认",
-    "buy": "2026-11-09 16:00:00",
-    "open": "2026-11-24 09:00:00",
+    "buy": "",
+    "open": "",
     "source": "github",
-    "fetchedAt": "2026-10-30 16:29:41"
+    "fetchedAt": "2026-10-31 06:36:34"
   },
   {
     "id": "c3771ac3a59a85768e082b5d2942110e",
@@ -162,7 +305,7 @@
     "buy": "2026-11-09 16:00:00",
     "open": "2026-11-24 09:00:00",
     "source": "github",
-    "fetchedAt": "2026-10-30 16:29:41"
+    "fetchedAt": "2026-10-31 06:36:34"
   },
   {
     "id": "ce37f732575ccce4743f0cfb8d3d805c",
@@ -173,28 +316,6 @@
     "buy": "2026-11-04 17:00:00",
     "open": "2026-11-23 09:00:00",
     "source": "github",
-    "fetchedAt": "2026-10-30 16:29:41"
-  },
-  {
-    "id": "d8ee06f5a54aeb478b9ac8e439079c3f",
-    "title": "新疆能源大南湖一矿、大南湖二矿职工餐厅食材配送服务（三年）公开招标招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261030/6e6347c5cd4e46588dd637f20a3f0361.html",
-    "date": "2026-10-30",
-    "status": "待确认",
-    "buy": "2026-11-05 16:00:00",
-    "open": "2026-11-20 10:00:00",
-    "source": "github",
-    "fetchedAt": "2026-10-30 16:29:41"
-  },
-  {
-    "id": "6ffe886c1c037c6f24eb8e6ed0f4b3a1",
-    "title": "山东公司山东新能源公司基于主动安全支撑的新能源黑灯场站研究及应用公开招标项目招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261030/4f97be37-ae00-4bd2-a00d-1553754383c1.html",
-    "date": "2026-10-30",
-    "status": "待确认",
-    "buy": "2026-11-05 16:00:00",
-    "open": "2026-11-24 09:00:00",
-    "source": "github",
-    "fetchedAt": "2026-10-30 16:29:41"
+    "fetchedAt": "2026-10-31 06:36:34"
   }
 ]
