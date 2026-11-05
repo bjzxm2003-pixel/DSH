@@ -1,5 +1,38 @@
 [
   {
+    "id": "ba6bdf0967ce1b90332e8bc3004fab2f",
+    "title": "宁夏电力新能源分公司九个工程项目气候可行性论证技术服务公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261105/78e1f9b6-01a9-4597-bb12-a51b073e6ea5.html",
+    "date": "2026-11-05",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-11-05 07:40:39"
+  },
+  {
+    "id": "d58f2d3835ff3fb5973d8c567a9aaefe",
+    "title": "山东公司国能（滨州）新能源有限公司山东公司山东新能源公司滨州175MW光伏项目运行维护(三年)公开招标公开招标招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261105/f04a146f75744a1983c61d5f123b838e.html",
+    "date": "2026-11-05",
+    "status": "待确认",
+    "buy": "2026-11-10 16:00:00",
+    "open": "2026-12-03 09:00:00",
+    "source": "github",
+    "fetchedAt": "2026-11-05 07:40:39"
+  },
+  {
+    "id": "e37d71fe02ac75ade0cecb9b83fcadf4",
+    "title": "浙江公司综合能源北仑电厂纬七路新增地磅及原地磅整治项目公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261105/7109b6e6-113f-4c4c-91ea-a286421260dd.html",
+    "date": "2026-11-05",
+    "status": "待确认",
+    "buy": "2026-11-11 16:00:00",
+    "open": "2026-11-26 09:00:00",
+    "source": "github",
+    "fetchedAt": "2026-11-05 07:40:39"
+  },
+  {
     "id": "229c02ff8f450ae295befbe01a1a6d6c",
     "title": "湖南公司国家能源集团湖南电力新能源有限公司湖南公司新能源公司2026-2027年后勤增补物业服务公开招标公开招标（第2次）招标公告",
     "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261104/82ee750048a5408a8b671de14e59f051.html",
@@ -8,7 +41,7 @@
     "buy": "2026-11-09 16:00:00",
     "open": "2026-11-24 16:00:00",
     "source": "github",
-    "fetchedAt": "2026-11-04 17:43:05"
+    "fetchedAt": "2026-11-05 07:40:39"
   },
   {
     "id": "bce565d08a31088edb9a9e978825011a",
@@ -19,7 +52,7 @@
     "buy": "2026-11-10 16:00:00",
     "open": "2026-11-25 09:00:00",
     "source": "github",
-    "fetchedAt": "2026-11-04 17:43:05"
+    "fetchedAt": "2026-11-05 07:40:39"
   },
   {
     "id": "87536a8cefd31ffcd6737ec41e0c9f8a",
@@ -30,7 +63,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-11-04 17:43:05"
+    "fetchedAt": "2026-11-05 07:40:39"
   },
   {
     "id": "931ef57e3ec0a48a0e8d7c444dfb4be8",
@@ -41,7 +74,7 @@
     "buy": "",
     "open": "",
     "source": "github",
-    "fetchedAt": "2026-11-04 17:43:05"
+    "fetchedAt": "2026-11-05 07:40:39"
   },
   {
     "id": "4ac1567fc137333a2ab9c7e2a711bf7e",
@@ -49,10 +82,76 @@
     "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002002/20261104/1d75e161-dbbc-4b92-aa86-583c1dcbd750.html",
     "date": "2026-11-04",
     "status": "待确认",
-    "buy": "2026-11-09 11:00:00",
-    "open": "2026-11-24 11:00:00",
+    "buy": "",
+    "open": "",
     "source": "github",
-    "fetchedAt": "2026-11-04 17:43:05"
+    "fetchedAt": "2026-11-05 07:40:39"
+  },
+  {
+    "id": "e9c23b7773af0c455dbbdd9a0136159d",
+    "title": "天津公司滨海电力燃机等容量替代改造项目EPC总承包公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002002/20261104/d69229f7-89d8-4338-84c6-25b4ffddff42.html",
+    "date": "2026-11-04",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-11-05 07:40:39"
+  },
+  {
+    "id": "c726330247ce61cb57f2cc43799b8fbe",
+    "title": "河南公司驻马店公司国电西平平原风电100MW扩建项目勘察设计公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261104/1947d8fe-2dbd-4ecd-af3b-b57a4489d8c9.html",
+    "date": "2026-11-04",
+    "status": "待确认",
+    "buy": "2026-11-09 16:00:00",
+    "open": "2026-11-30 16:00:00",
+    "source": "github",
+    "fetchedAt": "2026-11-05 07:40:39"
+  },
+  {
+    "id": "96634486f8d6870c461d57f3905a6939",
+    "title": "乌海能源各单位视频管理平台及服务器等设备配件采购公开招标招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002001/20261104/9369131bafba46959a38949b463053de.html",
+    "date": "2026-11-04",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-11-05 07:40:39"
+  },
+  {
+    "id": "e67f23011f28dec5b160049d9609e735",
+    "title": "科环集团国能（北京）电气承揽宿松风电场整机改造用并网控制保护模块等生产物料公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002001/20261104/8cf06ecc-f621-4fb2-96cb-cb209c3864b4.html",
+    "date": "2026-11-04",
+    "status": "待确认",
+    "buy": "2026-11-09 16:00:00",
+    "open": "2026-11-16 14:00:00",
+    "source": "github",
+    "fetchedAt": "2026-11-05 07:40:39"
+  },
+  {
+    "id": "d025a4ea6d036cd89cc9deeb1c6b69ee",
+    "title": "山东公司山东新能源公司绿能（东明）中南部175MW风电项目监理服务公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261104/387364e1-5e49-4a0e-9d46-e8be9d44aebf.html",
+    "date": "2026-11-04",
+    "status": "待确认",
+    "buy": "",
+    "open": "",
+    "source": "github",
+    "fetchedAt": "2026-11-05 07:40:39"
+  },
+  {
+    "id": "edfb5b545418feb8a497f578094d1cad",
+    "title": "榆林化工气化灰黑水处理技术服务公开招标项目招标公告",
+    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261103/64f1cb75-14a5-46af-a76a-0e440cc8033b.html",
+    "date": "2026-11-03",
+    "status": "待确认",
+    "buy": "2026-11-09 16:00:00",
+    "open": "2026-11-24 09:00:00",
+    "source": "github",
+    "fetchedAt": "2026-11-05 07:40:39"
   },
   {
     "id": "b1a3f65b1f2b23e574bae31475cc9044",
@@ -63,7 +162,7 @@
     "buy": "2026-11-09 16:00:00",
     "open": "2026-11-24 09:00:00",
     "source": "github",
-    "fetchedAt": "2026-11-04 17:43:05"
+    "fetchedAt": "2026-11-05 07:40:39"
   },
   {
     "id": "3405cd49c0d13f5c4a1adc0653e4a6f8",
@@ -71,10 +170,10 @@
     "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261103/de656788-9033-4ba6-a470-89c65cd05d45.html",
     "date": "2026-11-03",
     "status": "待确认",
-    "buy": "",
-    "open": "",
+    "buy": "2026-11-09 16:00:00",
+    "open": "2026-11-24 16:00:00",
     "source": "github",
-    "fetchedAt": "2026-11-04 17:43:05"
+    "fetchedAt": "2026-11-05 07:40:39"
   },
   {
     "id": "b4b9a1ec45dee74b176a37a428199252",
@@ -82,86 +181,9 @@
     "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261103/660b9720-ae5e-4796-88c2-e3de22e2c52b.html",
     "date": "2026-11-03",
     "status": "待确认",
-    "buy": "2026-11-09 16:00:00",
-    "open": "2026-11-24 14:00:00",
+    "buy": "",
+    "open": "",
     "source": "github",
-    "fetchedAt": "2026-11-04 17:43:05"
-  },
-  {
-    "id": "068a2a8ac4e621561cc8ccfc19bd9c24",
-    "title": "科环集团龙源环保哈密国能2×66万千瓦热电联产烟气脱硫系统EPC项目烟气换热器公开招标项目招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002001/20261103/f90640bd-222b-4b4d-9ead-15639a3883ca.html",
-    "date": "2026-11-03",
-    "status": "待确认",
-    "buy": "2026-11-08 17:00:00",
-    "open": "2026-11-16 09:00:00",
-    "source": "github",
-    "fetchedAt": "2026-11-04 17:43:05"
-  },
-  {
-    "id": "0405234566cf9036044f5d2b7d13bb7a",
-    "title": "国家能源集团氢能科技有限责任公司液氢制储运加关键技术研究与应用示范项目氢液化成套设备公开招标项目招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002001/20261103/8799c8c4-ce99-49a1-bd16-088d358d3550.html",
-    "date": "2026-11-03",
-    "status": "待确认",
-    "buy": "2026-11-09 16:00:00",
-    "open": "2026-11-23 16:00:00",
-    "source": "github",
-    "fetchedAt": "2026-11-04 17:43:05"
-  },
-  {
-    "id": "bc980b2cd0c85a6423b18aad3851d5b0",
-    "title": "科环集团龙源环保煤电耦合污泥处置智能生产系统研发与示范应用项目污泥车间智能监测诊断与闭环协同控制系统配套智能化升级公开招标招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261103/282e3fd07bfc4bccb9febe9261356789.html",
-    "date": "2026-11-03",
-    "status": "待确认",
-    "buy": "2026-11-09 16:00:00",
-    "open": "2026-11-25 09:00:00",
-    "source": "github",
-    "fetchedAt": "2026-11-04 17:43:05"
-  },
-  {
-    "id": "e84fffeb7d29a1c2fc1b8e47e564729b",
-    "title": "乌海能源路天煤矿变更开采方式补充勘探及储量核实报告编制服务公开招标项目招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261103/a6fa04fc-92be-430e-8f11-8dc0b8712ae0.html",
-    "date": "2026-11-03",
-    "status": "待确认",
-    "buy": "2026-11-09 16:00:00",
-    "open": "2026-11-24 09:00:00",
-    "source": "github",
-    "fetchedAt": "2026-11-04 17:43:05"
-  },
-  {
-    "id": "44e24e3fc093ea0a8ed2d55f26e6e5d6",
-    "title": "国电电力河北新能源应用先进智能体技术的在役风电机组发电性能优化与深度安全监测研究公开招标项目（第2次）招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002003/20261103/5d84c7e6-e662-4e9c-bc0c-c6cde7654a23.html",
-    "date": "2026-11-03",
-    "status": "待确认",
-    "buy": "2026-11-10 16:00:00",
-    "open": "2026-11-23 16:00:00",
-    "source": "github",
-    "fetchedAt": "2026-11-04 17:43:05"
-  },
-  {
-    "id": "0e620a899656d2b762923d18e7b48b19",
-    "title": "雁宝能源国能宝日希勒能源有限公司矿山救护大队2026年安全费色谱仪、校验仪采购公开招标项目招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002001/20261103/8b34f506-e211-47aa-82f4-acd74771d2c0.html",
-    "date": "2026-11-03",
-    "status": "待确认",
-    "buy": "2026-11-10 16:00:00",
-    "open": "2026-11-23 10:00:00",
-    "source": "github",
-    "fetchedAt": "2026-11-04 17:43:05"
-  },
-  {
-    "id": "984bc51b185787b5431cbda00c8b499d",
-    "title": "乌海能源各单位呼吸器、自救器及相关检测装置采购公开招标项目招标公告",
-    "link": "https://www.chnenergybidding.com.cn/bidweb/001/001002/001002001/20261103/7bf13102-79c6-4d1c-ba65-bbac1ff1dff2.html",
-    "date": "2026-11-03",
-    "status": "待确认",
-    "buy": "2026-11-09 16:00:00",
-    "open": "2026-11-23 09:00:00",
-    "source": "github",
-    "fetchedAt": "2026-11-04 17:43:05"
+    "fetchedAt": "2026-11-05 07:40:39"
   }
 ]
